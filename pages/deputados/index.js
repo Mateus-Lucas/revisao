@@ -15,6 +15,9 @@ const index = ({ deputados }) => {
             <Card className='mb-4'>
              <Link href={'/deputados/' + item.id}>
               <Card.Img variant="top" key={item.id} src={item.urlFoto}/>
+              <Card.Body>
+                <Card.Text>{item.nome}</Card.Text>
+              </Card.Body>
               </Link>
             </Card>
           </Col>
